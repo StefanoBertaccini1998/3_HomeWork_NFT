@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
+require("solidity-docgen");
 
 const { SEPOLIA_URL, METAMASK_PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
 
@@ -14,7 +15,6 @@ module.exports = {
       },
     },
   },
-  defaultNetwork: "sepolia",
   networks: {
     hardhat: {},
     sepolia: {
@@ -36,5 +36,10 @@ module.exports = {
     apiKey: {
       sepolia: ETHERSCAN_API_KEY,
     },
+  },
+  docgen: {
+    path: "./docs",
+    clear: true,
+    runOnCompile: true,
   },
 };

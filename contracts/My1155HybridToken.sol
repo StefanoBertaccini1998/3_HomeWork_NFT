@@ -12,16 +12,22 @@ contract My1155HybridToken is ERC1155Supply, Ownable {
 
     mapping(uint256 => string) private _uris;
 
+    /**
+     * @notice contract constructor with ipfs link to metadata
+     */
     constructor()
         ERC1155(
             "ipfs://Qmb27L7Zr1853xV3rC7Z9mSQ1KTF7NJQnEDdinLNPKH71V/{id}.json"
         )
-    {
-        _mint(msg.sender, DarkKnight, 1, "");
-        _mint(msg.sender, LineWallPaper, 10, "");
-        _mint(msg.sender, HalfManWallPaper, 15, "");
-    }
+    {}
 
+    /**
+     * @dev mint a new token with id, amount and data
+     * @param account recipient address
+     * @param id token id
+     * @param amount token amount
+     * @param data token data
+     */
     function mint(
         address account,
         uint256 id,
