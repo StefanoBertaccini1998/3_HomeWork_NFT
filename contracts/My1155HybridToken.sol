@@ -34,6 +34,9 @@ contract My1155HybridToken is ERC1155Supply, Ownable {
         uint256 amount,
         bytes memory data
     ) public onlyOwner {
+        if (totalSupply(id) > 1 && id == 1) {
+            revert("id 1 is an NFT");
+        }
         _mint(account, id, amount, data);
     }
 
