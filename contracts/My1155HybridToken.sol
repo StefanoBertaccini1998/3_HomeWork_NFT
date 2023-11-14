@@ -46,7 +46,7 @@ contract My1155HybridToken is ERC1155Supply, Ownable {
 
     function setTokenUri(
         uint256 tokenId,
-        string memory tokenUri
+        string calldata tokenUri
     ) public onlyOwner {
         require(bytes(_uris[tokenId]).length == 0, "Cannot set uri twice");
         _uris[tokenId] = tokenUri;
