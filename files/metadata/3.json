@@ -1,0 +1,15 @@
+{
+  "name": "My collection #1",
+  "description": "MasterZ Dev collection",
+  "image": "ipfs://Qmd9bhUB5BevPcrQCcyYcuWBcf161CgfQnGBmyMpA3YSdP/3.jpg",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "HalfMan"
+    },
+    {
+      "trait_type": "Color",
+      "value": "White"
+    }
+  ]
+}

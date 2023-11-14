@@ -1,0 +1,15 @@
+{
+  "name": "My collection #1",
+  "description": "MasterZ Dev collection",
+  "image": "ipfs://Qmd9bhUB5BevPcrQCcyYcuWBcf161CgfQnGBmyMpA3YSdP/2.jpg",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Line"
+    },
+    {
+      "trait_type": "Color",
+      "value": "MultiColor"
+    }
+  ]
+}

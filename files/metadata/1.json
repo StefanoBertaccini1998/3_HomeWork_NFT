@@ -1,0 +1,15 @@
+{
+  "name": "My collection #1",
+  "description": "MasterZ Dev collection",
+  "image": "ipfs://Qmd9bhUB5BevPcrQCcyYcuWBcf161CgfQnGBmyMpA3YSdP/1.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "BlackCavalier"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Purple"
+    }
+  ]
+}
